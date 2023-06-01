@@ -20,7 +20,7 @@ import java.util.Set;
 
 public class RenderBlockPreview
 {
-    public WandJob wandJob;
+    private WandJob wandJob;
     public Set<BlockPos> undoBlocks;
 
     @SubscribeEvent
@@ -38,7 +38,11 @@ public class RenderBlockPreview
         if(wand == null) return;
 
         if(!(player.isSneaking() && ClientEvents.isOptKeyDown())) {
-            if(wandJob == null || !compareRTR(wandJob.rayTraceResult, rtr) || !(wandJob.wand.equals(wand))) {
+            // Use cached wandJob for previews of the same target pos/dir
+            // Exception: always update if blockCount < 2 to prevent 1-block previews when block updates
+            // from the last placement are lagging
+            if(wandJob == null || !compareRTR(wandJob.rayTraceResult, rtr) || !(wandJob.wand.equals(wand)
+                    || wandJob.blockCount() < 2)) {
                 wandJob = ItemWand.getWandJob(player, player.getEntityWorld(), rtr, wand);
             }
             blocks = wandJob.getBlockPositions();
