@@ -72,10 +72,6 @@ public class RenderBlockPreview
         event.setCanceled(true);
     }
 
-    public void reset() {
-        wandJob = null;
-    }
-
     private static boolean compareRTR(BlockHitResult rtr1, BlockHitResult rtr2) {
         return rtr1.getBlockPos().equals(rtr2.getBlockPos()) && rtr1.getDirection().equals(rtr2.getDirection());
     }
