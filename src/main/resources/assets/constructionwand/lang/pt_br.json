@@ -1,0 +1,61 @@
+{
+    "item.constructionwand.stone_wand": "Varinha de pedra",
+    "item.constructionwand.iron_wand": "Varinha de ferro",
+    "item.constructionwand.diamond_wand": "diamondWand",
+    "item.constructionwand.infinity_wand": "Varinha infinita",
+    "item.constructionwand.core_angel": "Angel Wand Core",
+    "item.constructionwand.core_destruction": "Destruction Wand Core",
+  
+    "constructionwand.tooltip.blocks": "Max. %d blocos",
+    "constructionwand.tooltip.shift": "Pressione Shift]",
+    "constructionwand.tooltip.cores": "Núcleos de varinhas:",
+    "constructionwand.tooltip.core_tip": "Combine o núcleo com sua varinha em uma grade de criação",
+  
+    "constructionwand.option.cores": "",
+    "constructionwand.option.cores.constructionwand:default": "Núcleo de construção",
+    "constructionwand.option.cores.constructionwand:default.desc": "Estender seu prédio do lado de frente para você",
+    "constructionwand.option.cores.constructionwand:core_angel": "§6angelCore",
+    "constructionwand.option.cores.constructionwand:core_angel.desc": "Coloque atrás dos quarteirões e no meio do ar",
+    "constructionwand.option.cores.constructionwand:core_destruction": "§cNúcleo de destruição",
+    "constructionwand.option.cores.constructionwand:core_destruction.desc": "Destrói blocos do lado de frente para você",
+  
+    "constructionwand.option.lock": "Restrição: ",
+    "constructionwand.option.lock.horizontal": "§aEsquerda direita",
+    "constructionwand.option.lock.horizontal.desc": "Construa uma coluna horizontal em frente ao bloco original",
+    "constructionwand.option.lock.vertical": "§aCima baixo",
+    "constructionwand.option.lock.vertical.desc": "Construa uma coluna vertical em frente ao bloco original",
+    "constructionwand.option.lock.northsouth": "§6Norte Sul",
+    "constructionwand.option.lock.northsouth.desc": "Construa uma linha na direção N/s no topo do bloco original",
+    "constructionwand.option.lock.eastwest": "§6Leste Oeste",
+    "constructionwand.option.lock.eastwest.desc": "Construa uma linha na direção E/W no topo do bloco original",
+    "constructionwand.option.lock.nolock": "§cNenhum",
+    "constructionwand.option.lock.nolock.desc": "Estender de qualquer lado do bloco original",
+  
+    "constructionwand.option.direction": "Direção: ",
+    "constructionwand.option.direction.target": "§6Alvo",
+    "constructionwand.option.direction.target.desc": "Coloque blocos com a mesma direção que o bloco de destino",
+    "constructionwand.option.direction.player": "§aJogadora",
+    "constructionwand.option.direction.player.desc": "Coloque blocos de frente para o jogador",
+  
+    "constructionwand.option.replace": "Substituição: ",
+    "constructionwand.option.replace.yes": "§aSim",
+    "constructionwand.option.replace.yes.desc": "Substitua certos blocos como fluidos, neve e capim alto",
+    "constructionwand.option.replace.no": "§cNão",
+    "constructionwand.option.replace.no.desc": "Não substitua blocos",
+  
+    "constructionwand.option.match": "Coincidindo: ",
+    "constructionwand.option.match.exact": "§aExata",
+    "constructionwand.option.match.exact.desc": "Estender apenas blocos que são exatamente iguais",
+    "constructionwand.option.match.similar": "§6Semelhante",
+    "constructionwand.option.match.similar.desc": "Tratar blocos semelhantes (tipos de sujeira/grama) igualmente",
+    "constructionwand.option.match.any": "§cAlguma",
+    "constructionwand.option.match.any.desc": "Estender qualquer bloco",
+  
+    "constructionwand.option.random": "Aleatório: ",
+    "constructionwand.option.random.yes": "§aSim",
+    "constructionwand.option.random.yes.desc": "Coloque blocos aleatórios presentes em seu hotbar",
+    "constructionwand.option.random.no": "§cNão",
+    "constructionwand.option.random.no.desc": "Não randomize blocos colocados",
+
+    "stat.constructionwand.use_wand": "Blocos colocados usando varinha"
+}

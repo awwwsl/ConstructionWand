@@ -1,0 +1,61 @@
+{
+    "item.constructionwand.stone_wand": "돌 완드",
+    "item.constructionwand.iron_wand": "철 완드",
+    "item.constructionwand.diamond_wand": "다이아몬드 완드",
+    "item.constructionwand.infinity_wand": "무한의 완드",
+    "item.constructionwand.core_angel": "천사 완드 코어",
+    "item.constructionwand.core_destruction": "파괴 완드 코어",
+
+    "constructionwand.tooltip.blocks": "최대. %d 블록",
+    "constructionwand.tooltip.shift": "[SHIFT]를 누르세요.",
+    "constructionwand.tooltip.cores": "완드 코어:",
+    "constructionwand.tooltip.core_tip": "조합창에서 코어와 완드를 합치세요.",
+
+    "constructionwand.option.cores": "",
+    "constructionwand.option.cores.constructionwand:default": "생성 코어",
+    "constructionwand.option.cores.constructionwand:default.desc": "당신 쪽으로 건물을 확장합니다.",
+    "constructionwand.option.cores.constructionwand:core_angel": "§6천사 코어",
+    "constructionwand.option.cores.constructionwand:core_angel.desc": "블록 뒤와 공중에 배치합니다.",
+    "constructionwand.option.cores.constructionwand:core_destruction": "§c파괴 코어",
+    "constructionwand.option.cores.constructionwand:core_destruction.desc": "당신 쪽의 블록을 파괴합니다.",
+
+    "constructionwand.option.lock": "제한: ",
+    "constructionwand.option.lock.horizontal": "§a오른쪽/왼쪽",
+    "constructionwand.option.lock.horizontal.desc": "원래 블록의 앞에 수평한 열을 만듭니다.",
+    "constructionwand.option.lock.vertical": "§a위/아래",
+    "constructionwand.option.lock.vertical.desc": "원래 블록의 앞에 수직한 열을 만듭니다.",
+    "constructionwand.option.lock.northsouth": "§6북쪽/남쪽",
+    "constructionwand.option.lock.northsouth.desc": "원래 블록의 위에 북/남 방향으로 행을 만듭니다.",
+    "constructionwand.option.lock.eastwest": "§6동쪽/서쪽",
+    "constructionwand.option.lock.eastwest.desc": "원래 블록의 위에 동/서 방향으로 행을 만듭니다.",
+    "constructionwand.option.lock.nolock": "§c없음",
+    "constructionwand.option.lock.nolock.desc": "원래 블록의 어느 방향으로도 확장합니다.",
+
+    "constructionwand.option.direction": "방향: ",
+    "constructionwand.option.direction.target": "§6대상",
+    "constructionwand.option.direction.target.desc": "대상 블록과 같은 방향으로 블록을 배치합니다.",
+    "constructionwand.option.direction.player": "§a플레이어",
+    "constructionwand.option.direction.player.desc": "플레이어를 향해 블록을 배치합니다.",
+
+    "constructionwand.option.replace": "재배치: ",
+    "constructionwand.option.replace.yes": "§a예",
+    "constructionwand.option.replace.yes.desc": "유체, 눈, 키 큰 잔디와 같은 특정 블록을 교체합니다.",
+    "constructionwand.option.replace.no": "§c아니오",
+    "constructionwand.option.replace.no.desc": "블록을 재배치하지 않습니다.",
+
+    "constructionwand.option.match": "비교: ",
+    "constructionwand.option.match.exact": "§a정확",
+    "constructionwand.option.match.exact.desc": "완전히 같은 블록만 확장합니다.",
+    "constructionwand.option.match.similar": "§6유사",
+    "constructionwand.option.match.similar.desc": "비슷한 블록(흙/잔디)을 똑같이 취급합니다.",
+    "constructionwand.option.match.any": "§c아무거나",
+    "constructionwand.option.match.any.desc": "아무 블록이나 확장합니다.",
+
+    "constructionwand.option.random": "무작위: ",
+    "constructionwand.option.random.yes": "§a예",
+    "constructionwand.option.random.yes.desc": "핫바에 있는 블록 중 무작위적으로 배치합니다.",
+    "constructionwand.option.random.no": "§c아니오",
+    "constructionwand.option.random.no.desc": "배치할 블록을 무작위적으로 하지 않습니다.",
+
+    "stat.constructionwand.use_wand": "완드로 배치한 블록 수"
+}
