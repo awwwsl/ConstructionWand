@@ -1,8 +1,6 @@
 package thetadev.constructionwand.wand.undo;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.BlockItemUseContext;
@@ -100,17 +98,13 @@ public class PlaceSnapshot implements ISnapshot
 
         // Can block be placed?
         BlockState blockState = item.getBlock().getStateForPlacement(ctx);
-        if(blockState == null) return null;
+        if(blockState == null || !blockState.isValidPosition(world, pos)) return null;
 
         // Forbidden Tile Entity?
         if(!WandUtil.isTEAllowed(blockState)) return null;
 
         // No entities colliding?
         if(WandUtil.entitiesCollidingWithBlock(world, blockState, pos)) return null;
-
-        // Adjust blockstate to neighbors
-        blockState = Block.getValidBlockForPosition(blockState, world, pos);
-        if(blockState.getBlock() == Blocks.AIR || !blockState.isValidPosition(world, pos)) return null;
 
         // Copy block properties from supporting block
         if(targetMode && supportingBlock != null) {
