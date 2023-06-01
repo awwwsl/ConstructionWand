@@ -101,7 +101,7 @@ dependencies {
             version: "${project.mcversion}-${project.forgeversion}"
     ])
 
-    compileOnly fg.deobf("mezz.jei:${jei_version}:api")
+    //compileOnly fg.deobf("mezz.jei:${jei_version}:api")
     runtimeOnly fg.deobf("mezz.jei:${jei_version}")
 
     compileOnly fg.deobf([
