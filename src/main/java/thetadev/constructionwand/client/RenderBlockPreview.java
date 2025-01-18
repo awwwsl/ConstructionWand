@@ -2,6 +2,7 @@ package thetadev.constructionwand.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
@@ -64,8 +65,14 @@ public class RenderBlockPreview
         double d1 = player.yOld + player.getEyeHeight() + (player.getY() - player.yOld) * partialTicks;
         double d2 = player.zOld + (player.getZ() - player.zOld) * partialTicks;
 
+        Minecraft minecraft = Minecraft.getInstance();
+        boolean isFirstPerson = minecraft.options.getCameraType().isFirstPerson();
         for(BlockPos block : blocks) {
             AABB aabb = new AABB(block).move(-d0, -d1, -d2);
+            if(!isFirstPerson) {
+                // HACK: Move aabb to the correct position in third person
+                aabb = aabb.move(player.getEyePosition((float) partialTicks).subtract(minecraft.gameRenderer.getMainCamera().getPosition()));
+            }
             LevelRenderer.renderLineBox(ms, lineBuilder, aabb, colorR, colorG, colorB, 0.4F);
         }
 
